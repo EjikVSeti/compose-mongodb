@@ -6,10 +6,6 @@ services:
     image: mongo
     ports:
       - '27017:27017'
-    environment:
-      MONGODB_USER: "user"
-      MONGODB_PASS: "pass"
-      MONGO_INITDB_DATABASE: "test_mongo_db"
     volumes:
       - mongo_volumes:/data/db
     entrypoint: [ "/usr/bin/mongod", "--bind_ip_all", "--replSet", "rs0" ]
