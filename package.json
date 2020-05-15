@@ -1,0 +1,17 @@
+{
+  "name": "compose-mongodb",
+  "version": "1.0.0",
+  "description": "docker-compose Mongo",
+  "scripts": {
+    "start": "docker-compose -f docker-compose.yml up -d",
+    "down": "docker-compose -f docker-compose.yml down",
+    "down:v": "docker-compose -f docker-compose.yml down -v",
+    "stop": "docker-compose -f docker-compose.yml stop"
+  },
+  "keywords": [
+    "docker-compose",
+    "mongo"
+  ],
+  "author": "ejikvseti <ejikvseti@gmail.com>",
+  "license": "ISC"
+}
